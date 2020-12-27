@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import Header from './Components/Header';
-import StartGameScreen from './Screens/StartGameScreen';
+import Header from './components/Header';
+import StartGameScreen from './screens/StartGameScreen';
 
 export default function App () {
   return (
