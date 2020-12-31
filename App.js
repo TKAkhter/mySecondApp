@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, {useState} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import * as Font from 'expo-font';
@@ -67,6 +68,8 @@ export default function App () {
       <Header title="Guess a Number" />
       {content}
 =======
+=======
+>>>>>>> 0932cc1... Created a new Expo app
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
@@ -76,23 +79,32 @@ export default function App() {
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
+<<<<<<< HEAD
+>>>>>>> 0932cc1... Created a new Expo app
+=======
 >>>>>>> 0932cc1... Created a new Expo app
     </View>
   );
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 const styles = StyleSheet.create ({
   screen: {
     flex: 1,
     backgroundColor: '#fff',
 =======
+=======
+>>>>>>> 0932cc1... Created a new Expo app
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+<<<<<<< HEAD
+>>>>>>> 0932cc1... Created a new Expo app
+=======
 >>>>>>> 0932cc1... Created a new Expo app
   },
 });
