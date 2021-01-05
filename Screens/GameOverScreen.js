@@ -1,8 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 
-import BodyText from '../constants/default-styles';
-
 const GameOverScreen = props => {
   return (
     <View style={styles.screen}>
