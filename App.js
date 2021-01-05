@@ -35,7 +35,7 @@ export default function App() {
     setGameRounds(numOfRounds);
   };
 
-  let content = <StartGameScreen onStart={startGameHandler} />;
+  let content = <StartGameScreen onStartGame={startGameHandler} />;
 
   if (userNumber && guessRounds <= 0) {
     content = (
