@@ -2,7 +2,7 @@
 import React, {useState} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import * as Font from 'expo-font';
-import AppLoading from 'expo-app-loading';
+// import AppLoading from 'expo-app-loading';
 
 import Header from './components/Header';
 import StartGameScreen from './screens/StartGameScreen';
@@ -21,15 +21,15 @@ export default function App () {
 
   const [dataLoaded, setDataLoaded] = useState (false);
 
-  if (!dataLoaded) {
-    return (
-      <AppLoading
-        startAsync={fetchFonts}
-        onFinish={() => setDataLoaded (true)}
-        onError={console.warn}
-      />
-    );
-  }
+  // if (!dataLoaded) {
+  //   return (
+  //     <AppLoading
+  //       startAsync={fetchFonts}
+  //       onFinish={() => setDataLoaded (true)}
+  //       onError={(err) => console.log (err)}
+  //     />
+  //   );
+  // }
 
   const configureNewGameHandler = () => {
     setGameRounds (0);
