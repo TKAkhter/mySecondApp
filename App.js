@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 import React, {useState} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import * as Font from 'expo-font';
-// import AppLoading from 'expo-app-loading';
+import AppLoading from 'expo-app-loading';
 
 import Header from './components/Header';
 import StartGameScreen from './screens/StartGameScreen';
@@ -11,40 +9,30 @@ import GameScreen from './screens/GameScreen';
 import GameOverScreen from './screens/GameOverScreen';
 
 const fetchFonts = () => {
-  return Font.loadAsync ({
-    'open-sans': require ('./assets/fonts/OpenSans-Regular.ttf'),
-    'open-sans-bold': require ('./assets/fonts/OpenSans-Bold.ttf'),
+  return Font.loadAsync({
+    'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
+    'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf'),
   });
 };
 
-export default function App () {
-  const [userNumber, setUserNumber] = useState ();
+export default function App() {
+  const [userNumber, setUserNumber] = useState();
 
-  const [dataLoaded, setDataLoaded] = useState (false);
-
-  // if (!dataLoaded) {
-  //   return (
-  //     <AppLoading
-  //       startAsync={fetchFonts}
-  //       onFinish={() => setDataLoaded (true)}
-  //       onError={(err) => console.log (err)}
-  //     />
-  //   );
-  // }
+  const [fontLoaded, setFontLoaded] = useState(false);
 
   const configureNewGameHandler = () => {
-    setGameRounds (0);
-    setUserNumber (null);
+    setGameRounds(0);
+    setUserNumber(null);
   };
 
-  const startGameHandler = selectedNumber => {
-    setUserNumber (selectedNumber);
+  const startGameHandler = (selectedNumber) => {
+    setUserNumber(selectedNumber);
   };
 
-  const [guessRounds, setGameRounds] = useState (0);
+  const [guessRounds, setGameRounds] = useState(0);
 
-  const gameOverHandler = numOfRounds => {
-    setGameRounds (numOfRounds);
+  const gameOverHandler = (numOfRounds) => {
+    setGameRounds(numOfRounds);
   };
 
   let content = <StartGameScreen onStart={startGameHandler} />;
@@ -62,49 +50,27 @@ export default function App () {
       />
     );
   }
-
-  return (
-    <View style={styles.screen}>
-      <Header title="Guess a Number" />
-      {content}
-=======
-=======
->>>>>>> 0932cc1... Created a new Expo app
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-<<<<<<< HEAD
->>>>>>> 0932cc1... Created a new Expo app
-=======
->>>>>>> 0932cc1... Created a new Expo app
-    </View>
-  );
+  if (!fontLoaded) {
+    return (
+      <AppLoading
+        startAsync={fetchFonts}
+        onFinish={() => setFontLoaded(true)}
+        onError={(err) => console.log(err)}
+      />
+    );
+  } else {
+    return (
+      <View style={styles.screen}>
+        <Header title="Guess a Number" />
+        {content}
+      </View>
+    );
+  }
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-const styles = StyleSheet.create ({
+const styles = StyleSheet.create({
   screen: {
     flex: 1,
     backgroundColor: '#fff',
-=======
-=======
->>>>>>> 0932cc1... Created a new Expo app
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-<<<<<<< HEAD
->>>>>>> 0932cc1... Created a new Expo app
-=======
->>>>>>> 0932cc1... Created a new Expo app
   },
 });
