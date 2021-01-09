@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 import TitleText from './TitleText';
-import Colors from '../constants/colors';
+import Colors from '../constants/Colors';
 
 const Header = props => {
   return (

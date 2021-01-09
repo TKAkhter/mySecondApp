@@ -1502,6 +1502,11 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
+app-loading@^0.0.51:
+  version "0.0.51"
+  resolved "https://registry.yarnpkg.com/app-loading/-/app-loading-0.0.51.tgz#0151381c4ef7216a39efb33baef8cc05517ae8eb"
+  integrity sha1-AVE4HE73IWo577M7rvjMBVF66Os=
+
 argparse@^1.0.7:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"

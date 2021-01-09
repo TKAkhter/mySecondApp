@@ -1,6 +1,7 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
-import Colors from '../constants/colors';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+
+import Colors from '../constants/Colors';
 
 const MainButton = props => {
   return (
@@ -8,22 +9,22 @@ const MainButton = props => {
       <View style={styles.button}>
         <Text style={styles.buttonText}>{props.children}</Text>
       </View>
-
     </TouchableOpacity>
   );
 };
 
-const styles = StyleSheet.create ({
+const styles = StyleSheet.create({
   button: {
     backgroundColor: Colors.primary,
-    paddingHorizontal: 30,
     paddingVertical: 12,
-    borderRadius: 25,
+    paddingHorizontal: 30,
+    borderRadius: 25
   },
   buttonText: {
     color: 'white',
     fontFamily: 'open-sans',
-    fontSize: 18,
-  },
+    fontSize: 18
+  }
 });
+
 export default MainButton;
